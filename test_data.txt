@@ -1,0 +1,56 @@
+estimated : {}
+feelslike_f : 78
+wind_mph : 0
+windchill_c : NA
+precip_today_in : 
+observation_time_rfc822 : Wed, 11 May 2016 15:08:00 -0400
+temperature_string : 78 F (25.6 C)
+heat_index_c : NA
+temp_f : 78
+heat_index_f : NA
+heat_index_string : NA
+dewpoint_c : 21
+feelslike_c : 27
+wind_string : Calm
+visibility_mi : 10.0
+wind_gust_kph : 0
+precip_1hr_string : 0.00 in ( 0 mm)
+display_location : {'country': 'US', 'elevation': '100.00000000', 'state_name': 'North Carolina', 'zip': '27707', 'full': 'Durham, NC', 'city': 'Durham', 'country_iso3166': 'US', 'state': 'NC', 'magic': '1', 'latitude': '35.95217896', 'wmo': '99999', 'longitude': '-78.94097900'}
+local_epoch : 1462995440
+forecast_url : http://www.wunderground.com/US/NC/Durham.html
+windchill_f : NA
+wind_dir : SE
+ob_url : http://www.wunderground.com/cgi-bin/findweather/getForecast?query=35.975521,-78.921356
+wind_gust_mph : 0
+icon : cloudy
+icon_url : http://icons.wxug.com/i/c/k/cloudy.gif
+dewpoint_string : 69 F (21 C)
+UV : 5
+nowcast : 
+weather : Overcast
+relative_humidity : 74%
+pressure_in : 30.10
+local_tz_short : EDT
+temp_c : 25.6
+wind_degrees : 129
+precip_today_string :  in ( mm)
+history_url : http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=MD4462
+observation_epoch : 1462993680
+local_time_rfc822 : Wed, 11 May 2016 15:37:20 -0400
+pressure_mb : 1019
+image : {'url': 'http://icons.wxug.com/graphics/wu2/logo_130x80.png', 'title': 'Weather Underground', 'link': 'http://www.wunderground.com'}
+dewpoint_f : 69
+windchill_string : NA
+local_tz_offset : -0400
+wind_kph : 0
+local_tz_long : America/New_York
+pressure_trend : +
+solarradiation : --
+precip_1hr_in : 0.00
+observation_location : {'country': 'US', 'full': 'APRSWXNET, Durham, North Carolina', 'city': 'APRSWXNET, Durham', 'country_iso3166': 'US', 'state': 'North Carolina', 'elevation': '351 ft', 'latitude': '35.975521', 'longitude': '-78.921356'}
+feelslike_string : 78 F (27 C)
+station_id : MD4462
+precip_1hr_metric :  0
+precip_today_metric : --
+observation_time : Last Updated on May 11, 3:08 PM EDT
+visibility_km : 16.1
