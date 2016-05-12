@@ -1,11 +1,9 @@
 import requests
 import json
+from models import Sun
+
 
 """API KEY: 96fd72e23c579a3a"""
-
-"""Step 1: locate API links DONE: SEE README"""
-"""Step 2: write responses to files for testing"""
-"""Step 3: write code to extract info based on location"""
 
 """last thing to do is hook up code to API directly"""
 #needs to query MULTIPLE API endpoints
@@ -35,6 +33,7 @@ import json
 # with open('conditions_test.json', 'w') as f:
 #     data = data[string]
 #     json.dump(data, f)
+
 
 conditions = 'http://api.wunderground.com/api/96fd72e23c579a3a/conditions/lang:EN/q/27707.json'
 forecast10day = 'http://api.wunderground.com/api/96fd72e23c579a3a/forecast10day/lang:EN/q/27707.json'
@@ -68,6 +67,9 @@ print('forecast10day_dict keys: ', forecast10day_dict.keys())
 print('astronomy_dict keys: ', astronomy_dict.keys())
 print('alerts_dict keys: ', alerts_dict.keys())
 print('currenthurricane_dict keys: ', currenthurricane_dict.keys())
+
+sun = Sun(astronomy_dict)
+print(sun.rise_hour)
 
 # filename_list = ['conditions_test.json', 'forecast10day.json', 'astronomy.json', 'alerts.json', 'currenthurricane.json']
 # string_list = [conditions, forecast10day, astronomy, alerts, currenthurricane]
