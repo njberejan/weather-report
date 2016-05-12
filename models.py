@@ -14,11 +14,11 @@ class Weather:
 
     def __str__(self):
 
-        return """The weather is {}. The actual temperature is {} degrees, although it feels like {} degrees. \n
-                The wind is blowing at {} mph and the air pressure is {}. Visibility is {} miles. \n
-                The wind is blowing {}. There has been {} inches of precipitation today.""".format(self.weather,
-                self.temperature_string, self.feelslike_string, self.wind_mph, self.pressure_in, self.visibility_mi,
-                self.wind_dir, self.precip_today_in)
+        return """The weather is {}. The actual temperature is {} degrees, and the relative temperature is {} degrees.
+The wind is blowing at {} mph and the air pressure is {}. Visibility is {} miles.
+The wind is blowing {}. There has been {} inches of precipitation today.""".format(self.weather,
+        self.temperature_string, self.feelslike_string, self.wind_mph, self.pressure_in, self.visibility_mi,
+        self.wind_dir, self.precip_today_in)
 
 class Forecast:
 
@@ -77,7 +77,7 @@ class Hurricane:
         self.status = currenthurricane_dict["currenthurricane"]
 
     def __str__(self):
-        fr item in self.status:
+        for item in self.status:
             return "{}".format(item)
 
     def print_alerts(self):
