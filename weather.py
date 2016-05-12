@@ -4,8 +4,13 @@ from models import Weather, Forecast, Sun, Alert, Hurricane
 
 
 def main():
-
-    zipcode = input("Please enter a zipcode to see the weather report: ")
+    while True:
+        zipcode = input("Please enter a zipcode to see the weather report: ")
+        if len(zipcode) != 5:
+            print("Please enter a five-digit zipcode.")
+            continue
+        else:
+            break
 
     conditions = 'http://api.wunderground.com/api/96fd72e23c579a3a/conditions/lang:EN/q/' + zipcode + '.json'
     forecast10day = 'http://api.wunderground.com/api/96fd72e23c579a3a/forecast10day/lang:EN/q/' + zipcode + '.json'
