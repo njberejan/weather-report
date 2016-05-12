@@ -1,3 +1,6 @@
+import requests
+import json
+
 """API KEY: 96fd72e23c579a3a"""
 
 """Step 1: locate API links DONE: SEE README"""
@@ -15,12 +18,9 @@
 ## list of all active hurricanes (anywhere)
 
 #code must be written in classes and spread across multiple files
-## bryce suggests one class per API endpoints
+## bryce suggests one class per API endpoint
 
 #for testing purposes, write data from API to files (if you ping the API too many times, will lose access to their servers)
-
-import requests
-import json
 
 """the below writes conditions API to text file."""
 # url = 'http://api.wunderground.com/api/96fd72e23c579a3a/geolookup/conditions/q/27707.json'
@@ -42,14 +42,34 @@ astronomy = 'http://api.wunderground.com/api/96fd72e23c579a3a/astronomy/lang:EN/
 alerts = 'http://api.wunderground.com/api/96fd72e23c579a3a/alerts/lang:EN/q/27707.json'
 currenthurricane = 'http://api.wunderground.com/api/96fd72e23c579a3a/currenthurricane/lang:EN/q/27707.json'
 
-
 def make_json_test(filename, string):
     response = requests.get(url=string)
     data = response.json()
     with open(filename, 'w') as f:
         json.dump(data, f)
 
-filename_list = ['conditions_test.json', 'forecast10day.json', 'astronomy.json', 'alerts.json', 'currenthurricane.json']
-string_list = [conditions, forecast10day, astronomy, alerts, currenthurricane]
-for filename, item in zip(filename_list, string_list):
-    make_json_test(filename, item)
+response1 = requests.get(url=conditions)
+conditions_dict = response1.json()
+
+response2 = requests.get(url=forecast10day)
+forecast10day_dict = response2.json()
+
+response3 = requests.get(url=astronomy)
+astronomy_dict = response3.json()
+
+response4 = requests.get(url=alerts)
+alerts_dict = response4.json()
+
+response5 = requests.get(url=currenthurricane)
+currenthurricane_dict = response5.json()
+
+print('conditions_dict keys: ', conditions_dict.keys())
+print('forecast10day_dict keys: ', forecast10day_dict.keys())
+print('astronomy_dict keys: ', astronomy_dict.keys())
+print('alerts_dict keys: ', alerts_dict.keys())
+print('currenthurricane_dict keys: ', currenthurricane_dict.keys())
+
+# filename_list = ['conditions_test.json', 'forecast10day.json', 'astronomy.json', 'alerts.json', 'currenthurricane.json']
+# string_list = [conditions, forecast10day, astronomy, alerts, currenthurricane]
+# for filename, item in zip(filename_list, string_list):
+#     make_json_test(filename, item)

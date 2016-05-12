@@ -1,1 +1,7 @@
-{"query_zone": "025", "response": {"version": "0.1", "termsofService": "http://www.wunderground.com/weather/api/d/terms.html", "features": {"alerts": 1}}, "alerts": []}
+{
+  "response.features.alerts": 1,
+  "response.termsofService": "http://www.wunderground.com/weather/api/d/terms.html",
+  "response.version": "0.1",
+  "alerts": [],
+  "query_zone": "025"
+}

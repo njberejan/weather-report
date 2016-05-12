@@ -25,3 +25,13 @@ settings: lang:EN
 query: [6 digit zip code]
 
 format: json
+
+.keys() on top level dictionary
+ex. weather_dict.keys() to see
+
+
+conditions_dict keys:  dict_keys(['response', 'current_observation'])
+forecast10day_dict keys:  dict_keys(['response', 'forecast'])
+astronomy_dict keys:  dict_keys(['moon_phase', 'response', 'sun_phase'])
+alerts_dict keys:  dict_keys(['response', 'query_zone', 'alerts'])
+currenthurricane_dict keys:  dict_keys(['currenthurricane', 'response'])
